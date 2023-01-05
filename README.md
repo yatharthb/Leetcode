@@ -1,2 +1,1 @@
-# Leetcode
-Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub)
+Collection of accepted Leetcode solutions, starting 1/5/2022
