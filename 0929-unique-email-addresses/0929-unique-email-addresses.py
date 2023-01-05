@@ -1,6 +1,6 @@
 class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
-        filteredEmails = []
+        filteredEmails = set()
         filteredEmail = ""
         
         for email in emails:
@@ -21,8 +21,8 @@ class Solution:
             
             
             filteredEmail += "@" + email.split("@")[1]
-            filteredEmails.append(filteredEmail)
+            filteredEmails.add(filteredEmail)
             filteredEmail = ""
         
         #print(filteredEmails)
-        return len(set(filteredEmails))
+        return len(filteredEmails)
