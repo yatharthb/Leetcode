@@ -1,20 +1,11 @@
 from itertools import permutations
 class Solution:
     def reorderedPowerOf2(self, n: int) -> bool:
-        
-        pwrs = set()
-        pwrs.add("1")
-        i = 1
-        while len(str(i)) < len(str(n))+2:
-            i *=2
-            pwrs.add(str(i))
-        
-        for p in [''.join(t) for t in permutations(str(n))]:
-            
-            if p in pwrs:
-                return True
-            
-        return False
+        pwrs = {'234455668', '2345588999', '256', '122446', '0122579', '0248', '1', '0112344778', '2244667999', '128', '2', '46', '23334455', '0134449', '1289', '012356789', '11146778899', '112234778', '13468', '23678', '0145678', '01466788', '1234446788', '11266777', '16', '4', '8', '0124', '011237', '125', '35566', '0469', '224588', '23', '0368888'}
+
+
+       
+        return ''.join(sorted(str(n))) in pwrs
         
             
         
